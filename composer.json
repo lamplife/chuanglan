@@ -2,8 +2,16 @@
     "name": "firstphp/chuanglan",
     "type": "library",
     "license": "MIT",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "狂奔的蚂蚁",
+            "email": "firstphp@firstphp.com"
+        }
+    ],
     "keywords": [
-        "php",
+        "创蓝短信",
+        "创蓝sms",
         "hyperf"
     ],
     "description": "创蓝SMS开发组件for Hyperf",
