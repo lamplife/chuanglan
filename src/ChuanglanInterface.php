@@ -22,7 +22,7 @@ interface ChuanglanInterface
      * @param bool $needstatus
      * @return mixed
      */
-    public function sendSms(int $mobile, string $msg, bool $needstatus = 'true');
+    public function sendSms(int $mobile, string $msg, bool $needstatus=true);
 
 
     /**

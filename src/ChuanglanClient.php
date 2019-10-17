@@ -66,7 +66,7 @@ class ChuanglanClient implements ChuanglanInterface
      * @param string $msg
      * @param bool $needstatus
      */
-    public function sendSms(int $mobile, string $msg, bool $needstatus = 'true') {
+    public function sendSms(int $mobile, string $msg, bool $needstatus=true) {
         $result = $this->http->post('msg/HttpBatchSendSM', [
             'json' => [
                 'msg' => $msg,
