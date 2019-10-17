@@ -30,6 +30,14 @@ class ConfigProvider
                     __DIR__,
                 ],
             ],
+            'publish' => [
+                [
+                    'id' => 'config',
+                    'description' => 'The config for chuanglan-sms.',
+                    'source' => __DIR__ . '/publish/chuanglan_sms.php',
+                    'destination' => BASE_PATH . '/config/autoload/chuanglan_sms.php',
+                ],
+            ],
         ];
     }
 }
