@@ -50,7 +50,7 @@ class ChuanglanClient implements ChuanglanInterface
 
     public function __construct(array $config = [], ContainerInterface $container)
     {
-        $config = $config ? $config : config('wxapp');
+        $config = $config ? $config : config('chuanglan_sms');
         if ($config) {
             $this->url = $config['url'];
             $this->account = $config['account'];
