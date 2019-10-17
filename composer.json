@@ -2,7 +2,7 @@
     "name": "firstphp/chuanglan",
     "type": "library",
     "license": "MIT",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "authors": [
         {
             "name": "狂奔的蚂蚁",
@@ -28,14 +28,14 @@
     "require": {
         "php": ">=7.2",
         "ext-swoole": ">=4.3",
-        "hyperf/utils": "~1.0.*",
-        "hyperf/framework": "~1.0.*",
-        "hyperf/di": "~1.0.*"
+        "hyperf/utils": "^1.1.0",
+        "hyperf/framework": "^1.1.0",
+        "hyperf/di": "^1.1.0"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^2.14",
-        "hyperf/testing": "~1.0.*",
-        "phpstan/phpstan": "^0.10.5",
+        "hyperf/testing": "^1.1.0",
+        "phpstan/phpstan": "^0.11.2",
         "swoft/swoole-ide-helper": "dev-master"
     },
     "config": {
