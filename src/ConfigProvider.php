@@ -13,7 +13,7 @@ declare(strict_types=1);
 
 namespace Firstphp\Chuanglan;
 
-use Firstphp\Chuanglan\ChuanglanClient;
+use Firstphp\Chuanglan\Factory\ChuanglanFactory;
 
 class ConfigProvider
 {
@@ -21,7 +21,7 @@ class ConfigProvider
     {
         return [
             'dependencies' => [
-                ChuanglanInterface::class => ChuanglanClient::class
+                ChuanglanInterface::class => ChuanglanFactory::class
             ],
             'commands' => [
             ],

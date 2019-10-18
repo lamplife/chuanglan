@@ -1,6 +1,6 @@
 <?php
 
-declare(strict_types=1);
+declare(strict_types = 1);
 
 /**
  * Author: 狂奔的螞蟻 <www.firstphp.com>
@@ -16,8 +16,19 @@ class Http
 {
     const BASE_URI = 'http://222.73.117.158/';
 
+    /**
+     * @var string
+     */
     protected $account;
+
+    /**
+     * @var string
+     */
     protected $pwd;
+
+    /**
+     * @var object
+     */
     protected $client;
 
 
@@ -50,10 +61,11 @@ class Http
         if ($this->account) {
             $arguments[0] .= (stripos($arguments[0], '?') ? '&' : '?') . 'account=' . $this->account;
         }
-        if ($this->pswd) {
-            $arguments[0] .= (stripos($arguments[0], '?') ? '&' : '?') . 'pswd=' . $this->pswd;
+        if ($this->pwd) {
+            $arguments[0] .= (stripos($arguments[0], '?') ? '&' : '?') . 'pswd=' . $this->pwd;
         }
         $response = $this->client->request($name, $arguments[0], $arguments[1])->getBody()->getContents();
+
         return $this->execResult($response);
     }
 
@@ -61,8 +73,9 @@ class Http
     /**
      * 处理返回值
      */
-    public function execResult($result){
-        $result=preg_split("/[,\r\n]/", $result);
+    public function execResult($result)
+    {
+        $result = preg_split("/[,\r\n]/", $result);
         return $result;
     }
 
